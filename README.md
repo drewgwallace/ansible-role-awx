@@ -34,6 +34,10 @@ Variables to control what version of AWX is checked out and installed.
 
 By default, this role will run the installation playbook included with AWX (which builds a set of containers and runs them). You can disable the playbook run by setting this variable to `no`.
 
+    nodejs_install_npm_user: USER
+    
+The nodejs install will default to the username of the playbook invoker, this will override that to a specified user for install.
+
 ## Dependencies
 
 + geerlingguy.repo-epel
